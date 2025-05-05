@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useRef } from 'react';
 import Header from '../common/Header';
+import Image from 'next/image';
 
 const Hero = () => {
     const [message, setMessage] = useState('');
@@ -121,10 +122,10 @@ const Hero = () => {
                             />
                             {previewUrl ? (
                                 <div className="relative">
-                                    <img
+                                    <Image
                                         src={previewUrl}
                                         alt="Preview"
-                                        className="w-full h-64 object-cover rounded-lg"
+                                        className="w-full h-64 object-cover rounded-lg"                                        
                                     />
                                     <button
                                         onClick={() => fileInputRef.current?.click()}
@@ -210,7 +211,7 @@ const Hero = () => {
 
             {/* Features Section */}
             <div className="max-w-7xl w-full py-12 px-6 md:px-6">
-                <h2 className="text-2xl font-bold text-center mb-8">What's Possible with D-ID</h2>
+                <h2 className="text-2xl font-bold text-center mb-8">What&apos;s Possible with D-ID</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="p-6 border rounded-lg">
                         <h3 className="font-semibold mb-2">Talking Photos</h3>
