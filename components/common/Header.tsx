@@ -17,11 +17,11 @@ const Header = () => {
                     />
                 </div>
                 
-                 <div className="text-black text-sm md:text-xl  ">AI </div>
+                 <div className="text-black text-xs md:text-sm pt-1  ">AI Design Services </div>
             </div>
             <div
              className='cursor-pointerhover:text-primary font-extrabold'>
-                    Demo
+                    AI Demo
                 </div>
         </div>
     )

@@ -91,17 +91,15 @@ const Hero = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white flex flex-col items-center overflow-hidden span-light">
+        <div className="min-h-screen bg-[#f3f3f5] flex flex-col items-center overflow-hidden span-light">
             <Header />
 
             <div className="max-w-7xl w-full text-center mt-6 px-4 md:px-6">
-                <button className="text-primary bg-gray-200 span-bold text-[10px] md:text-[12px] py-1 md:py-2 px-3 md:px-5 rounded-full">
+                <button className="text-white bg-primary span-bold text-[10px] md:text-[12px] py-1 md:py-2 px-3 md:px-5 rounded-full">
                     Transform Data Into Emotions
                 </button>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl leading-tight mt-3 md:mt-4 max-w-[380px] md:max-w-[600px] lg:max-w-[720px] mx-auto">
-                    Ein Gespräch, das entlastet,
-                    <br />
-                    nicht überfordert.
+                    Ein gutes Gespräch.
                 </h1>
                 <p className="text-gray-600 mt-2 text-[10px] md:text-sm span-bold">
                     Meet Alva. Sie Kennt sich mit Tinnitus aus
@@ -125,7 +123,9 @@ const Hero = () => {
                                     <Image
                                         src={previewUrl}
                                         alt="Preview"
-                                        className="w-full h-64 object-cover rounded-lg"                                        
+                                        className="w-full h-64 object-cover rounded-lg"   
+                                        width={256}
+                                        height={256}
                                     />
                                     <button
                                         onClick={() => fileInputRef.current?.click()}
@@ -209,24 +209,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Features Section */}
-            <div className="max-w-7xl w-full py-12 px-6 md:px-6">
-                <h2 className="text-2xl font-bold text-center mb-8">What&apos;s Possible with D-ID</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="p-6 border rounded-lg">
-                        <h3 className="font-semibold mb-2">Talking Photos</h3>
-                        <p className="text-gray-600">Transform static images into talking videos with natural lip movements</p>
-                    </div>
-                    <div className="p-6 border rounded-lg">
-                        <h3 className="font-semibold mb-2">Digital Humans</h3>
-                        <p className="text-gray-600">Create AI-generated human avatars that can speak and interact</p>
-                    </div>
-                    <div className="p-6 border rounded-lg">
-                        <h3 className="font-semibold mb-2">Real-time Animation</h3>
-                        <p className="text-gray-600">Animate faces in real-time with natural expressions and movements</p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };
