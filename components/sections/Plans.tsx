@@ -3,10 +3,6 @@ import { LocateFixed } from 'lucide-react';
 import { Users } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 
-
-
-
-
 export default function WhyUsSection() {
   return (
     <section className="bg-[#f3f3f5] py-12 px-4 md:px-12">

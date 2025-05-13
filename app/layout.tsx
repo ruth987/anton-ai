@@ -35,8 +35,7 @@ export default function RootLayout({
     <html lang="en" className="w-full">
       <body
         className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          
+      >
         {children}
       </body>
     </html>
